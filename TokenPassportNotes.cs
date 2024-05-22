@@ -57,6 +57,6 @@ public TokenPassport CreateTokenPassport()
 
 //make a request
 NetSuiteService nss = new NetSuiteService();
-nss.Url = instance.APILink;
-nss.tokenPassport = NSUtilities.instance.CreateTokenPassport();
+nss.Url = APILink;
+nss.tokenPassport = CreateTokenPassport();
  SearchResult result = nss.search(....);
